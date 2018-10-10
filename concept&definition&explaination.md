@@ -22,10 +22,10 @@
 两个不同的名字指向各自的对象，两个对象具有相同的值：使用==进行检查*<br>
 代码示例：<br>
 ```
-float1=2.5
-float2=2.5
-float3=float2
-float1==float2
+>>> float1=2.5
+>>> float2=2.5
+>>> float3=float2
+>>> float1==float2
 
 ```
 
