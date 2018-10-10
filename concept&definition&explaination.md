@@ -25,6 +25,7 @@
 float1=2.5
 float2=2.5
 float3=float2
+float1==float2
 
 ```
 
