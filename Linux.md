@@ -21,7 +21,7 @@
 
       ubuntu系统下登录windows：`ssh[-p port]Windows用户@Windows服务器地址`
       mac系统下登录ubuntu：`ssh [-p port] ubuntu用户@ubuntu服务器地址`
-      windows系统下`putty`：安装后输入ubuntu系统的ip地址即可；`xshell`：会话窗口中点击新建，在弹出窗口中输入需要连接的主机地址，		点击连接后，输入用户名。
+      windows系统下`putty`：安装后输入ubuntu系统的ip地址即可；`xshell`：会话窗口中点击新建，在弹出窗口中输入需要连接的主机地址，点击连接后，输入用户名。
 
 + scp，mac系统下远程copylinux系统下的文件&目录的命令，地址格式与ssh基本相同<br>
 
@@ -35,6 +35,17 @@
       登录远程服务器时，在第一次授权登录后，连接主机信息将被保存在`.ssh`目录下的`known_hosts`中。再次登录到该远程服务器时，不会提示授权。
         
 + 免密码登录
+
+使用windows系统作为ssh服务器(远程计算机)，ubuntu系统作为ssh客户端，首先在ubuntu中使用ssh连接到windows，发现需要输入命令。以下为免密登录配置：
+
+        执行2个终端密码：
+        ssh-keygen #回车三次后，在`.ssh`目录下已生成`id_rsa`和`id_rsa.pub`,是远程登录时用于加密的文件
+        ssh-copy-id windows用户@windows服务器地址 #拷贝一对秘钥到远程计算机家目录下的`.ssh`目录
+        
+ 配置完成后，连接远程服务器进行操作时，不会提示输入密码。
+ 
+ 
+        
 
 
 
