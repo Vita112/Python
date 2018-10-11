@@ -25,7 +25,7 @@
 
 + scp，mac系统下远程copylinux系统下的文件&目录的命令，地址格式与ssh基本相同<br>
 
-        拷贝文件：`scp -P port 本地文件 user@remote：远程目录`
+      拷贝文件：`scp -P port 本地文件 user@remote：远程目录`
         拷贝目录：`scp -r 当前目录 user@remote:远程目录`
   
 ##### SSH高级
