@@ -17,8 +17,9 @@
 |ftp服务器|21|
 
 + SHH客户端简单使用<br>
->mac系统下登录ubuntu：`ssh [-p port] user@remote`<br>
-windows系统下`putty`：安装后输入ubuntu系统的ip地址即可；`xshell`：会话窗口中点击新建，在弹出窗口中输入需要连接的主机地址，点击连接后，输入用户名。
+
+        mac系统下登录ubuntu：`ssh [-p port] user@remote`
+        windows系统下`putty`：安装后输入ubuntu系统的ip地址即可；`xshell`：会话窗口中点击新建，在弹出窗口中输入需要连接的主机地址，点击连接后，输入用户名。
 
 + scp，mac系统下远程copylinux系统下的文件&目录的命令，地址格式与ssh基本相同<br>
 
