@@ -22,8 +22,6 @@
 两个不同的名字指向各自的对象，两个对象具有相同的值：使用==进行检查*<br>
 代码示例：<br>
 ```
-python3.6
-
 float1=2.5
 float2=2.5
 float3=float2
@@ -33,10 +31,7 @@ float3 is float2  TRUE
 ```
 **对于浮点数，不执行全等==检查，而执行近似检查，引入math模块，看两者差值是否在delta之内：**
 ```
-python3.6
-
 if math.fabs（x-y）<delta:
-
 ```
 
 
