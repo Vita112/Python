@@ -1,4 +1,4 @@
 # Python
-× AboutPython
-× AboutLinux
+* AboutPython
+* AboutLinux
 
