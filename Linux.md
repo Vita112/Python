@@ -16,3 +16,5 @@
 |https|445|
 |ftp服务器|21|
 
++ SHH客户端简单使用
+` ssh [-p port] user@remote`
