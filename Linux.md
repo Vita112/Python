@@ -72,7 +72,24 @@
         chmod +r  filename  #增加可读权限
         chomod +x filename  #增加可执行权限。输入`./filename` 后，即执行
         
-##若一个目录没有可执行权限，将无法对它进行终端命令操作##        
+**若一个目录没有可执行权限，将无法对它进行终端命令操作**
+
++ 用户组添加/删除、确认组信息
+
+        sudo groupadd 组名
+        sudo groupdel 组名
+        cat /etc/group #显示新添加组的信息
+        
++ 创建用户/设置密码/删除用户
+
+        sudo useradd -m -g 组 新用户名  #-m：自动创建用户家目录；-g 组：指定用户所属组，若不存在，则创建
+        sudo passwd 用户名
+        cat /etc/passwd  # 显示新用户的家目录信息
+        
+> 若使用`sudo useradd -g 组 新用户名`，`/etc/passwd‘文件中有新用户的家目录信息，但是系统没有建立新用户的家目录。<br>
+解决方法：删除用户，重新创建。
+        
+        
         
 
  
