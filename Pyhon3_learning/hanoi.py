@@ -1,6 +1,6 @@
 
 
-def hanoi(n, a, b, c):
+hanoi(3, 'R',def hanoi(n, a, b, c):
     if n == 1:
         print(a,'-->',c)
     else:
@@ -9,4 +9,5 @@ def hanoi(n, a, b, c):
         hanoi(n - 1, b,a,c)
 
 
-hanoi(3, 'R', 'G', 'B')
+ 'G', 'B')
+
